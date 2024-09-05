@@ -1,0 +1,78 @@
+[
+  {
+    "question": "What does JSON stand for?",
+    "A": "JavaScript Oriented Notation",
+    "B": "JavaScript Object Notation ",
+    "C": "Java Ordered Notation ",
+    "D": "Java Object Notation",
+    "correct-answer": "B"
+  },
+  {
+    "question": "What is the file extension commonly used for JSON files? ",
+    "A": ".xml",
+    "B": ".js",
+    "C": ".json",
+    "D": ".html",
+    "correct-answer": "C"
+  },
+  {
+    "question":"How do you represent data in JSON? ",
+    "A": "Key-Value pairs",
+    "B": "Metadata",
+    "C": "Binary Data",
+    "D": "Key-Object pairs",
+    "correct-answer": "A"
+  },
+  {
+    "question": "Which symbol is used to enclose JSON objects?",
+    "A": "[]",
+    "B": "()",
+    "C": "{}",
+    "D": "''",
+    "correct-answer": "C"
+  },
+  {
+    "question": "Is JSON case-sensitive?",
+    "A": "Yes",
+    "B": "No",
+    "correct-answer": "A"
+  },
+  {
+    "question": "In JSON, keys must always be of which data type?",
+    "A": "String",
+    "B": "Number",
+    "C": "Boolean",
+    "D": "Object",
+    "correct-answer": "A"
+  },
+  {
+    "question": "Which symbol is used to separate key-value pairs in JSON?",
+    "A": ":",
+    "B": ";",
+    "C": ",",
+    "D": "=",
+    "correct-answer": "A"
+  },
+  {
+    "question": "What can JSON format be used for?",
+    "A": "Storing data",
+    "B": "Sending data to the server",
+    "C": "Receiving data from the server",
+    "D": "All of the above",
+    "correct-answer": "D"
+  },
+  {
+    "question": "Can you store functions in JSON?",
+    "A": "Yes",
+    "B": "No",
+    "correct-answer": "B"
+  },
+  {
+    "question": "How do you represent an array in JSON?",
+    "A": "[1, 2, 3]",
+    "B": "(1, 2, 3)",
+    "C": "{1, 2, 3}",
+    "D": "1, 2, 3",
+    "correct-answer": "A"
+  }
+]
