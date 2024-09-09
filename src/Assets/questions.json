@@ -1,78 +1,62 @@
 [
   {
+    "id":1,
     "question": "What does JSON stand for?",
-    "A": "JavaScript Oriented Notation",
-    "B": "JavaScript Object Notation ",
-    "C": "Java Ordered Notation ",
-    "D": "Java Object Notation",
-    "correct-answer": "B"
+    "answers": ["JavaScript Oriented Notation", "JavaScript Object Notation", "Java Ordered Notation", "Java Object Notation"],
+    "correct-answer": "1"
   },
   {
+    "id":2,
     "question": "What is the file extension commonly used for JSON files? ",
-    "A": ".xml",
-    "B": ".js",
-    "C": ".json",
-    "D": ".html",
-    "correct-answer": "C"
+    "answers": [".xml",".js",".json",".html"],
+    "correct-answer": "3"
   },
   {
+    "id":3,
     "question":"How do you represent data in JSON? ",
-    "A": "Key-Value pairs",
-    "B": "Metadata",
-    "C": "Binary Data",
-    "D": "Key-Object pairs",
-    "correct-answer": "A"
+    "answers": ["Key-Value pairs","Metadata","Binary Data","Key-Object pairs"],
+    "correct-answer": "0"
   },
   {
+    "id":4,
     "question": "Which symbol is used to enclose JSON objects?",
-    "A": "[]",
-    "B": "()",
-    "C": "{}",
-    "D": "''",
-    "correct-answer": "C"
+    "answers": ["[]","()","{}","''"],
+    "correct-answer": "3"
   },
   {
+    "id":5,
     "question": "Is JSON case-sensitive?",
-    "A": "Yes",
-    "B": "No",
-    "correct-answer": "A"
+    "answers": ["Yes","No"],
+    "correct-answer": "0"
   },
   {
+    "id":6,
     "question": "In JSON, keys must always be of which data type?",
-    "A": "String",
-    "B": "Number",
-    "C": "Boolean",
-    "D": "Object",
-    "correct-answer": "A"
+    "answers": ["String", "Number", "Boolean", "Object"],
+    "correct-answer": "0"
   },
   {
+    "id":7,
     "question": "Which symbol is used to separate key-value pairs in JSON?",
-    "A": ":",
-    "B": ";",
-    "C": ",",
-    "D": "=",
-    "correct-answer": "A"
+    "answers": [":", ";", ",", "="],
+    "correct-answer": "0"
   },
   {
+    "id":8,
     "question": "What can JSON format be used for?",
-    "A": "Storing data",
-    "B": "Sending data to the server",
-    "C": "Receiving data from the server",
-    "D": "All of the above",
-    "correct-answer": "D"
+    "answers": ["Storing data", "Sending data to the server", "Receiving data from the server", "All of the above"],
+    "correct-answer": "3"
   },
   {
+    "id":9,
     "question": "Can you store functions in JSON?",
-    "A": "Yes",
-    "B": "No",
-    "correct-answer": "B"
+    "answers": ["Yes", "No"],
+    "correct-answer": "1"
   },
   {
+    "id":10,
     "question": "How do you represent an array in JSON?",
-    "A": "[1, 2, 3]",
-    "B": "(1, 2, 3)",
-    "C": "{1, 2, 3}",
-    "D": "1, 2, 3",
-    "correct-answer": "A"
+    "answers": ["[1, 2, 3]", "(1, 2, 3)", "{1, 2, 3}", "1, 2, 3"],
+    "correct-answer": "0"
   }
 ]

@@ -1,0 +1,16 @@
+ .question-container{
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .finish-button{
+    background-color: red;
+    height: 30px;
+    width: 60px;
+ }
+ .next-button{
+    height: 20px;
+    width: 40px;
+    background-color: rgb(209, 178, 238);
+ }

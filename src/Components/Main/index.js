@@ -1,29 +1,36 @@
+import QuestionData from "../../Assets/questions.json";
 import Button from "../Button";
 import Header from "../Header";
 import Quiz from "../Quiz";
-import Result from "../Result"
+import Result from "../Result";
 import { useState } from "react";
 import "./Styles/index.css";
 
 const Homepage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [playQuizBtn, setPlayQuizBtn] = useState(false);
+  const [playState, setPlayState] = useState(false);
   const [finishState, setFinishState] = useState(false);
+
   const handlePlayQuizBtn = () => {
-    setPlayQuizBtn(true);
-  };
-  const handleNextClick = () => {
-    setCurrentQuestion(currentQuestion + 1);
+    if (finishState) {
+      setCurrentQuestion(0);
+      setFinishState(false);
+    }
+    setPlayState(true);
   };
 
-  const handleFinishQuizBtn = () => {
-    setFinishState(true);
+  const handleNextClick = () => {
+    if (QuestionData.length - 1 === currentQuestion) {
+      setFinishState(true);
+      setPlayState(false);
+    }
+    setCurrentQuestion(currentQuestion + 1);
   };
 
   return (
     <>
       <Header />
-      {!playQuizBtn ? (
+      {!playState && !finishState ? (
         <Button
           handleOnClick={handlePlayQuizBtn}
           text={"Play Quiz"}
@@ -33,10 +40,9 @@ const Homepage = () => {
         <Quiz
           currentQuestion={currentQuestion}
           handleNextClick={handleNextClick}
-          handleFinishQuizBtn={handleFinishQuizBtn}
         />
       ) : (
-        <Result />
+        <Result handlePlayQuizBtn={handlePlayQuizBtn} />
       )}
     </>
   );
