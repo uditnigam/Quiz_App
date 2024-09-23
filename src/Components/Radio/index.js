@@ -1,18 +1,24 @@
-import { useState } from "react";
+import "./Styles/index.css";
 
 const Radio = (props) => {
-    const {option, index} = props;
-    const [selectedOption, setSelectedOption] = useState("");
+  const { id, option, index, selectedOption, setSelectedOption, disabled, className} = props;
 
-    const handleOptionSelected = (event)=>{
-      setSelectedOption(event.target.value);
-      // console.log(event.target.value)
-    }
+  const handleOptionSelected = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <>
-      <div className="radio" key={index} onChange={handleOptionSelected} >
-        <input name="radio" type="radio" value={option}/>
-        <span>{option}</span> 
+      <div className={className} key={index} onChange={handleOptionSelected}>
+        <input
+          name={`ques ${id}`}
+          type="radio"
+          value={option}
+          id={option}
+          checked={option === selectedOption}
+          disabled={disabled}
+        />
+        <label for={option}>{option}</label>
       </div>
     </>
   );

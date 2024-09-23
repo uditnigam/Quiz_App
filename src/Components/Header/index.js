@@ -1,8 +1,10 @@
-import "./Styles/index.css"
+import "./Styles/index.css";
 
 const Header = () => {
   return (
-  <h1 className="header">Quiz App</h1>
-  )
+    <div className="header">
+      <h1 className="heading-cont">Quiz App</h1>
+    </div>
+  );
 };
 export default Header;

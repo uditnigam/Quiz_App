@@ -1,16 +1,26 @@
- .question-container{
-    height: 91vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
- }
- .finish-button{
-    background-color: red;
-    height: 30px;
-    width: 60px;
- }
- .next-button{
-    height: 20px;
-    width: 40px;
-    background-color: rgb(209, 178, 238);
- }
+.question-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.buttons {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.finish-button {
+  background-color: rgb(244, 202, 202);
+  border: none;
+}
+.next-button {
+  display: flex;
+  border: none;
+  align-items: center;
+  background-color: rgb(231, 210, 251);
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}

@@ -1,13 +1,23 @@
-import Button from "../Button";
+import ScoreCard from "../ScoreCard";
+import UserResult from "../UserResult";
+import "./Styles/index.css";
+
 
 const Result = (props) => {
-  const { handlePlayQuizBtn } = props;
+  const { currentQuestion, handlePlayQuizBtn, selectedAnswers } = props;
 
   return (
     <>
-      <h4>Total Question : 10</h4>
-      <h4>Correct Answers : 10</h4>
-      <Button text={"Play Again"} handleOnClick={handlePlayQuizBtn} />
+      <div className="result-page">
+        <ScoreCard
+          handlePlayQuizBtn={handlePlayQuizBtn}
+          selectedAnswers={selectedAnswers}
+        />
+        <UserResult
+          currentQuestion={currentQuestion}
+          selectedAnswers={selectedAnswers}
+        />
+      </div>
     </>
   );
 };

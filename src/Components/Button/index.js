@@ -1,12 +1,14 @@
+import "./Styles/index.css";
+
 const Button = (props) => {
-  const { text, handleOnClick, className } = props;
+  const { text, handleOnClick, className, arrow } = props;
   
   return (
-    <div>
-      <button className={className} onClick={handleOnClick}>
-        {text}
+    <>
+      <button className={className} style={{cursor: "pointer"}} onClick={handleOnClick}>
+        {text} {arrow}
       </button>
-    </div>
+    </>
   );
 };
 export default Button;

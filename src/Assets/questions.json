@@ -3,60 +3,60 @@
     "id":1,
     "question": "What does JSON stand for?",
     "answers": ["JavaScript Oriented Notation", "JavaScript Object Notation", "Java Ordered Notation", "Java Object Notation"],
-    "correct-answer": "1"
+    "correct-answer": "JavaScript Object Notation"
   },
   {
     "id":2,
     "question": "What is the file extension commonly used for JSON files? ",
     "answers": [".xml",".js",".json",".html"],
-    "correct-answer": "3"
+    "correct-answer": ".html"
   },
   {
     "id":3,
     "question":"How do you represent data in JSON? ",
     "answers": ["Key-Value pairs","Metadata","Binary Data","Key-Object pairs"],
-    "correct-answer": "0"
+    "correct-answer": "Key-Value pairs"
   },
   {
     "id":4,
     "question": "Which symbol is used to enclose JSON objects?",
     "answers": ["[]","()","{}","''"],
-    "correct-answer": "3"
+    "correct-answer": "''"
   },
   {
     "id":5,
     "question": "Is JSON case-sensitive?",
     "answers": ["Yes","No"],
-    "correct-answer": "0"
+    "correct-answer": "Yes"
   },
   {
     "id":6,
     "question": "In JSON, keys must always be of which data type?",
     "answers": ["String", "Number", "Boolean", "Object"],
-    "correct-answer": "0"
+    "correct-answer": "String"
   },
   {
     "id":7,
     "question": "Which symbol is used to separate key-value pairs in JSON?",
     "answers": [":", ";", ",", "="],
-    "correct-answer": "0"
+    "correct-answer": ":"
   },
   {
     "id":8,
     "question": "What can JSON format be used for?",
     "answers": ["Storing data", "Sending data to the server", "Receiving data from the server", "All of the above"],
-    "correct-answer": "3"
+    "correct-answer": "All of the above"
   },
   {
     "id":9,
     "question": "Can you store functions in JSON?",
     "answers": ["Yes", "No"],
-    "correct-answer": "1"
+    "correct-answer": "No"
   },
   {
     "id":10,
     "question": "How do you represent an array in JSON?",
     "answers": ["[1, 2, 3]", "(1, 2, 3)", "{1, 2, 3}", "1, 2, 3"],
-    "correct-answer": "0"
+    "correct-answer": "[1, 2, 3]"
   }
 ]

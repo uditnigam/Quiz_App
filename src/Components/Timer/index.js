@@ -24,8 +24,8 @@ const Timer = (props) => {
   },[time]);
   return (
     <>
-      {minutes < 10 ? `0${minutes}` : minutes}:
-      {seconds < 10 ? `0${seconds}` : seconds}
+      <h3>{minutes < 10 ? `0${minutes}` : minutes}</h3>
+      <h3>{seconds < 10 ? `0${seconds}` : seconds}</h3>
     </>
   );
 };
