@@ -18,6 +18,7 @@ const Homepage = () => {
     if (finishState) {
       setCurrentQuestion(0);
       setFinishState(false);
+      setSelectedAnswers([]);
     }
     setPlayState(true);
   };

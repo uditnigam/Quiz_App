@@ -13,25 +13,29 @@ const QuestionContainer = (props) => {
   return (
     <div className="question-page">
       <div className="question-details">
-        <h3 className="question-number">
-          <i class="fa-solid fa-circle-info"></i> Question No.{" "}
-          {currentQuestion + 1}
-        </h3>
-        <h3 className="timer">
+        <div className="question-number">
+          <h3 className="texts">
+            <i className="fa-solid fa-circle-info"></i> Question No.{" "}
+            {currentQuestion + 1}
+          </h3>
+        </div>
+        <div className="timer">
           <Timer
             currentQuestion={currentQuestion}
             handleNextClick={handleNextClick}
           />
-        </h3>
+        </div>
       </div>
       <div className="question-main">
-        <div className="question"> Q. {questionData.question}</div>
+        <div className="question" key={questionData[currentQuestion]}> Q. {questionData.question}</div>
+        <div className="info-text">Please choose one of the following answer:</div>
         <div className="options-cont">
           {questionData.answers.map((ele, index) => (
             <Radio
               className={"radio"}
               id={questionData.id}
               option={ele}
+              key={ele}
               index={index}
               selectedOption={selectedOption}
               setSelectedOption={setSelectedOption}

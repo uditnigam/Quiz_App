@@ -1,12 +1,49 @@
+.scorecard {
+  display: flex;
+  height: 480px;
+  width: 90%;
+  gap: 15px;
+  border: 1px solid #e1e1ff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #44444b;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 0px 10px 0px 10px;
+}
 
-.scorecard{
-    padding: 25px 10px 0px 10px;
-    display: flex;
-    height: 60%;
-    width: 80%;
-    gap: 5px;
-    border: 1px solid black;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.scorecard-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #e1e1ff;
+  font-size: 20px;
+}
+.result-declaration {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pass {
+  color: #97c096;
+  font-size: 25px;
+}
+.fail {
+  color: #f47373;
+  font-size: 25px;
+}
+.scorecard-elements {
+  height: 70px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e1e1ff;
+  border-radius: 3px;
+  color: #6c6c78;
+  background-color: #f7f2ff;
 }

@@ -8,17 +8,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 239, 234);
+    background-color: #f7f2ff;
 }
 .homepage-display-icons{
-    border: 1px solid rgb(211, 209, 208);
+    border: 1px solid #e1e1ff;
     height: 270px;
     width: 500px;
-    background-color: rgb(240 230 254);
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
 }
 .homepage-image{

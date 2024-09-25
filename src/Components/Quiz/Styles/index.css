@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #6c6c78;
 }
 .buttons {
   height: 50px;
@@ -12,15 +13,28 @@
   font-size: 20px;
 }
 .finish-button {
-  background-color: rgb(244, 202, 202);
+  height: 55px;
+  background-color: #97c096;
   border: none;
+  font-size: 22px;
+  color: #ffffff;
 }
 .next-button {
+  height: 55px;
   display: flex;
-  border: none;
   align-items: center;
-  background-color: rgb(231, 210, 251);
   justify-content: center;
   gap: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  border: none;
+  background-color: #9595c1;
+  color: #ffffff;
+  padding-left: 20px;
+}
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+  font-size: 15px;
 }

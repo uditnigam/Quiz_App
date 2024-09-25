@@ -1,0 +1,21 @@
+.texts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    color: #6c6c78;
+  }
+  
+.minutes{
+    border: 1px solid #e1e1ff;
+    border-right: none;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.seconds{
+    border: 1px solid #e1e1ff;
+    border-radius: 0px 3px 3px 0px;
+}

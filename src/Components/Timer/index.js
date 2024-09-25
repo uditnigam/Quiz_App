@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import "./Styles/index.css";
+
 
 const Timer = (props) => {
   const { currentQuestion, handleNextClick } = props;
@@ -24,8 +26,8 @@ const Timer = (props) => {
   },[time]);
   return (
     <>
-      <h3>{minutes < 10 ? `0${minutes}` : minutes}</h3>
-      <h3>{seconds < 10 ? `0${seconds}` : seconds}</h3>
+      <h3 className="texts minutes">{minutes < 10 ? `0${minutes}` : minutes}</h3>
+      <h3 className="texts seconds">{seconds < 10 ? `0${seconds}` : seconds}</h3>
     </>
   );
 };

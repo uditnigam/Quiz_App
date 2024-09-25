@@ -1,6 +1,5 @@
 import Button from "../Button";
 import QuestionData from "../../Assets/questions.json";
-// import UserResult from "../UserResult";
 import "./Styles/index.css";
 import { useState, useEffect } from "react";
 
@@ -27,17 +26,17 @@ const ScoreCard = (props) => {
   return (
     <>
       <div className="scorecard">
-        <h2>YOUR STATS</h2>
-        <h4>{(correctAnswers * 100) / QuestionData.length >= 60 ? "Pass" : "Fail"}</h4>
-        <div>Total Question: {QuestionData.length}</div>
-        <div>Correct Answers: {correctAnswers}</div>
-        <div>Your Score: {(correctAnswers * 100) / QuestionData.length}%</div>
-        <div>Passing Score: 60%</div>
+        <h2 className="scorecard-header info-text">Your Stats</h2>
+        <h3 className={`result-declaration ${(correctAnswers * 100) / QuestionData.length >= 60  ? "pass" : "fail"}`}>{(correctAnswers * 100) / QuestionData.length >= 60 ? "PASS" : "FAIL"}</h3>
+        <div className="scorecard-elements">Total Question: {QuestionData.length}</div>
+        <div className="scorecard-elements">Correct Answers: {correctAnswers}</div>
+        <div className="scorecard-elements">Your Score: {(correctAnswers * 100) / QuestionData.length}%</div>
+        <div className="scorecard-elements">Passing Score: 60%</div>
         <Button
           text={"Play Again"}
           handleOnClick={handlePlayQuizBtn}
           className="play-again-btn"
-          arrow={<i class="fa-solid fa-rotate"></i>}
+          arrow={<i className="fa-solid fa-rotate"></i>}
         />
       </div>
     </>

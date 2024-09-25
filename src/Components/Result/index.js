@@ -2,9 +2,9 @@ import ScoreCard from "../ScoreCard";
 import UserResult from "../UserResult";
 import "./Styles/index.css";
 
-
 const Result = (props) => {
   const { currentQuestion, handlePlayQuizBtn, selectedAnswers } = props;
+  console.log(selectedAnswers);
 
   return (
     <>
