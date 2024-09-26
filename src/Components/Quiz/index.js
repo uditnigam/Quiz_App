@@ -10,7 +10,6 @@ const Quiz = (props) => {
     selectedOption,
     setSelectedOption,
   } = props;
-  console.log(selectedOption);
   return (
     <div className="question-container">
       <QuestionContainer

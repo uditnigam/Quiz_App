@@ -27,8 +27,13 @@ const QuestionContainer = (props) => {
         </div>
       </div>
       <div className="question-main">
-        <div className="question" key={questionData[currentQuestion]}> Q. {questionData.question}</div>
-        <div className="info-text">Please choose one of the following answer:</div>
+        <div className="question" key={questionData[currentQuestion]}>
+          {" "}
+          Q. {questionData.question}
+        </div>
+        <div className="info-text">
+          Please choose one of the following answer:
+        </div>
         <div className="options-cont">
           {questionData.answers.map((ele, index) => (
             <Radio

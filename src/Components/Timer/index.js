@@ -4,12 +4,12 @@ import "./Styles/index.css";
 
 const Timer = (props) => {
   const { currentQuestion, handleNextClick } = props;
-  const [time, setTime] = useState(65);
+  const [time, setTime] = useState(120);
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
 
   useEffect(() => {
-    setTime(65);
+    setTime(120);
   }, [currentQuestion]);
 
   useEffect(() => {

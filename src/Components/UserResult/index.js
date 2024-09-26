@@ -3,12 +3,13 @@ import Radio from "../Radio";
 import "./Styles/index.css";
 
 const UserResult = (props) => {
-  const { currentQuestion, selectedAnswers, className } = props;
+  const {selectedAnswers} = props;
 
   return (
     <>
       {QuestionData.map((data, quesIndex) => (
-        <div key={quesIndex}
+        <div
+          key={quesIndex}
           className={`result-page-question ${
             selectedAnswers[quesIndex].answer === data["correct-answer"]
               ? "green"

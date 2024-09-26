@@ -3,8 +3,7 @@ import UserResult from "../UserResult";
 import "./Styles/index.css";
 
 const Result = (props) => {
-  const { currentQuestion, handlePlayQuizBtn, selectedAnswers } = props;
-  console.log(selectedAnswers);
+  const {handlePlayQuizBtn, selectedAnswers } = props;
 
   return (
     <>
@@ -14,7 +13,6 @@ const Result = (props) => {
           selectedAnswers={selectedAnswers}
         />
         <UserResult
-          currentQuestion={currentQuestion}
           selectedAnswers={selectedAnswers}
         />
       </div>

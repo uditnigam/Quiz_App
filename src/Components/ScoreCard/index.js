@@ -27,10 +27,22 @@ const ScoreCard = (props) => {
     <>
       <div className="scorecard">
         <h2 className="scorecard-header info-text">Your Stats</h2>
-        <h3 className={`result-declaration ${(correctAnswers * 100) / QuestionData.length >= 60  ? "pass" : "fail"}`}>{(correctAnswers * 100) / QuestionData.length >= 60 ? "PASS" : "FAIL"}</h3>
-        <div className="scorecard-elements">Total Question: {QuestionData.length}</div>
-        <div className="scorecard-elements">Correct Answers: {correctAnswers}</div>
-        <div className="scorecard-elements">Your Score: {(correctAnswers * 100) / QuestionData.length}%</div>
+        <h3
+          className={`result-declaration ${
+            (correctAnswers * 100) / QuestionData.length >= 60 ? "pass" : "fail"
+          }`}
+        >
+          {(correctAnswers * 100) / QuestionData.length >= 60 ? "PASS" : "FAIL"}
+        </h3>
+        <div className="scorecard-elements">
+          Total Question: {QuestionData.length}
+        </div>
+        <div className="scorecard-elements">
+          Correct Answers: {correctAnswers}
+        </div>
+        <div className="scorecard-elements">
+          Your Score: {(correctAnswers * 100) / QuestionData.length}%
+        </div>
         <div className="scorecard-elements">Passing Score: 60%</div>
         <Button
           text={"Play Again"}
